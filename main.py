@@ -8,11 +8,13 @@ x0=0
 y0=0
 x1=234
 y1=3232
-draw_line( x0, y0, 500, 100, screen, color )
+draw_line( x0, y0, 500, 200, screen, color )
 draw_line( x0, y0, x1, y1, screen, color )
 draw_line( x0, y0, 500, 500, screen, color )
-draw_line( x1, y1, x0, y0, screen, color )
-draw_line( 100, 100, 0, y0, screen, color )
+draw_line( 0, 400, 1000, y0, screen, color )
+draw_line( 100, 100, 1000, y0, screen, color )
+draw_line( 0, 100, 1000, 100, screen, color )
+draw_line( 100, 0, 100, 1000, screen, color )
 
 display(screen)
 save_extension(screen, 'img.png')
