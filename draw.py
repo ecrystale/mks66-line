@@ -1,16 +1,24 @@
 from display import *
 
 def draw_line( x0, y0, x1, y1, screen, color ):
+    if(x1<x0):
+        count=x0
+        x0=x1
+        x1=count
+        count=y0
+        y0=y1
+        y1=count
+        
     x=x0
     y=y0
     A=y1-y0
     B=-1*(x1-x0)
-    
+
     if (x1-x0)==0:
         while (y<=y1):
             plot(screen,color,x,y)
             y+=1
-        
+            
     if (x1-x0)!=0:
         m=(y1-y0)/(x1-x0)
         

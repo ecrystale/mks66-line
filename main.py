@@ -16,5 +16,7 @@ draw_line( 100, 100, 1000, y0, screen, color )
 draw_line( 0, 100, 1000, 100, screen, color )
 draw_line( 100, 0, 100, 1000, screen, color )
 
+
+
 display(screen)
 save_extension(screen, 'img.png')
